@@ -1,0 +1,42 @@
+.servicios_introduccion{
+    padding: 4rem;
+    text-align: center;
+    color: black;
+}
+.Servicios_contenido1{
+    padding: 2rem;
+    margin: auto;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center; 
+    
+}
+.Servicios_contenido2{
+    padding: 2rem;
+    margin: auto;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center; 
+ 
+}
+
+.Servicios_contenido3{
+    padding: 2rem;
+    margin: auto;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center; 
+   
+}
+.Servicios_contenido4{
+    padding: 2rem;
+    margin: auto;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center; 
+    
+}

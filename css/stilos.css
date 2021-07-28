@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+}
+
+@font-face {
+    font-family: "Modern Vision";
+    src: url("Modern Vision.ttf") format(truetype);
+}
+body{
+    background: #f0f8ea;
+    font-family: "Modern Vision";
+    margin: 0;
+}
+
+header{
+    background: #e7ecec;
+    color: #ebebd3;
+    padding: 1em 0;
+    position: relative;
+    font-family: sans-serif;
+}
+
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo{
+    margin: 2rem 0 rem 0rem 2rem;
+    float: left;
+    width: 14rem;
+    height: 2,5rem;  
+    margin: 0;
+}
+.logo-menu{
+    
+}
+.site-nav{
+    padding: 1rem;
+    top:100%;
+    right: 0;
+    position: absolute;
+    background: #464655;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+}
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #ccccd6;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+}
+.site-nav a{
+    color: #3a3a37;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    background: #000000;
+    color: #7483b9;
+}
+
+.site-nav--icon{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+
+.menu-toggle{
+   
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    
+}
+.menu-open .hamburger{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+    opacity: 0;
+}
+.menu-open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: #0661c9;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
+
+@media (min-width:700px){
+  .menu-toggle{
+      display: none;
+  } 
+  .site-nav{
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+      margin-right: 10px;
+      clip-path: initial;
+  } 
+  .site-nav li{
+      display: inline-block;
+      border: none;
+  }
+
+  .site-nav a{
+      padding: 0;
+      margin-left: 3em;
+  }
+  .site-nav--icon{
+      display: none;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus{
+      background: transparent;
+  }
+
+}
+
+
+/*banner*/
+
+.banner1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #13B9EB;
+    height: 100%;
+}
+
+.descripcion_baner{
+    padding: auto;
+    margin: auto;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.quienes_somos{
+    padding: 4rem;
+}
+.quienes_somos2{
+    padding: 4rem;
+}
+
+/*Mas sobre nosotros*/
+
+.sobre_nosotros{
+    display: flex;
+	justify-content: center;
+	align-content: center;
+    text-align: center;
+    background-color: #13B9EB;
+}
+
+.sobre_nosotros2{
+    padding: 2rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    background-color: #13B9EB;
+}
+.sobre_nosotros_img{
+    padding: auto;
+    margin: auto;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center; 
+}
+
+/*Pie  de pagina*/
+
+.logo_pie{
+    padding: auto;
+    margin: auto;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.siguenos{
+    background-color: #E6E6E6;
+    color: #000000;
+}

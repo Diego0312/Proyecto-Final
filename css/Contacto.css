@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+}
+body{
+    background: #f0f8ea;
+    font-family: "Modern Vision";
+    margin: 0;
+}
+.contacto_Fondo{
+    display: flex;
+    background: #fff
+}
