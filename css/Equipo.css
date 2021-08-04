@@ -1,0 +1,23 @@
+.Equipo_title{
+    padding: 2rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.descripcion_equipo{
+    padding: 4rem 1rem 1rem 3rem;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+#equipo img{
+    width: 100%;
+   }
+.Equipo_img{
+ padding-bottom: 4rem;
+}
+.slider_equipo{
+    color: #13B9EB;
+}

@@ -148,9 +148,12 @@ header::after{
 
 }
 
-
 /*banner*/
 
+#baner img{
+ width: 100%;
+ height: 20rem;
+}
 .banner1{
     display: flex;
     text-align: center;
@@ -158,7 +161,6 @@ header::after{
     background-color: #13B9EB;
     height: 100%;
 }
-
 .descripcion_baner{
     padding: auto;
     margin: auto;
@@ -168,14 +170,12 @@ header::after{
     align-items: center;
     color: #fff;
 }
-
 .quienes_somos{
-    padding: 4rem;
+    padding: 2rem;
 }
 .quienes_somos2{
     padding: 4rem;
 }
-
 /*Mas sobre nosotros*/
 
 .sobre_nosotros{
@@ -185,18 +185,24 @@ header::after{
     text-align: center;
     background-color: #13B9EB;
 }
-
-.sobre_nosotros2{
-    padding: 2rem;
-    margin: 0;
-    height: 100%;
+.sobre_nosotros_title{
+    padding: 1rem;
     display: flex;
 	justify-content: center;
     align-items: center;
     background-color: #13B9EB;
+    color: #fff;
+}
+.sobre_nosotros2{
+    padding: 2rem;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    background-color: #13B9EB;
+    color: #fff;
 }
 .sobre_nosotros_img{
-    padding: auto;
+
     margin: auto;
     height: 100%;
     display: flex;
@@ -214,8 +220,13 @@ header::after{
 	justify-content: center;
     align-items: center;
 }
-
+.Contacto_pie{
+   padding-top: 1rem;
+    height: 100%;
+}
 .siguenos{
+    padding: 1rem;
+    height: 100%;
     background-color: #E6E6E6;
     color: #000000;
 }

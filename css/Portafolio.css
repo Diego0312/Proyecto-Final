@@ -1,0 +1,9 @@
+.Portafolio_title{
+    padding-top: 2rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    
+}

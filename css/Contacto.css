@@ -9,6 +9,26 @@ body{
     margin: 0;
 }
 .contacto_Fondo{
+    padding: 3rem;
     display: flex;
-    background: #fff
+	justify-content: center;
+    align-items: center;
+}
+.descripcion_contacto{
+    padding: 4rem;
+    
+}
+#contacto img{
+    width: 100%;
+}
+.gif_contacto{
+    padding: 2rem;
+}
+.fundaciones_title{
+    padding: 1rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+    align-items: center;
 }
