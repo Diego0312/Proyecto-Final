@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="css/stilos.css">
     <link rel="stylesheet" href="css/Contacto.css">
     <title>Multiplay Films</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
+    <script src="js/scrollreveal.js"></script>
 </head>
 <body>
+    <div id="myButton"></div>
     <header>
         <div class="container">
             <a href="#"><img class="logo" src="images/Logo2.gif"></a>
@@ -37,29 +42,31 @@
                 <h5>Email</h5>
                 <p>multiplayfilms@hotmail.com</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 scroll_formulario">
                 <form>
                  <div class="mb-3">
                      <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                     <input class="form-control" type="text" placeholder="" aria-label="default input example">
                     <div id="emailHelp" class="form-text"></div>
                     <label for="exampleInputEmail1" class="form-label">Empresa</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
                     <div id="emailHelp" class="form-text"></div>
                     <label for="exampleInputEmail1" class="form-label">Celular</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
                     <div id="emailHelp" class="form-text"></div>
                     <label for="exampleInputEmail1" class="form-label">Ciudad</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
                     <div id="emailHelp" class="form-text"></div>
                     <label for="exampleInputEmail1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                    <label for="exampleInputEmail1" class="form-label">Servicio que solicita</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text"></div>
                  </div>
                     
                     <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                     <label class="form-check-label" for="exampleCheck1">Acepto condiones</label>
+                    
                  </div>
                  <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
@@ -101,14 +108,30 @@
                     <p>Siguenos</p>
                     <a href="https://www.facebook.com/MultiPlay-Films-110283001308600"> <img src="images/facebook.png"height="70rem" width="70rem"></a>
                     <a href="https://www.instagram.com/multiplayfilms/?hl=es-la">  <img src="images/instagram.png"height="70rem" width="70rem"></a> 
-                    <a href="https://twitter.com/FilmsMultiplayr">  <img src="images/twitter.png"height="70rem" width="70rem"></a>
+                    <a href="https://twitter.com/FilmsMultiplay">  <img src="images/twitter.png"height="70rem" width="70rem"></a>
                     <a href="https://www.youtube.com/channel/UCcGFX44blWtEUlqe1NOX4JQ">  <img src="images/youtube.png "height="70rem" width="70rem"></a>
 
             </div>
         </div>
 </footer>
+<script src="js/animacion.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script src="js/app.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '573128069058',
+            popupMessage: 'Hola, somos Multiplay Films, como le podemos ayudar?',
+            message: "Quisiera saber..,",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Bienvenido!',
+            headerColor: '#1D809E', 
+            backgroundColor: '#13B9EB',
+            buttonImage: '<img src="whatsApp.svg" />'
+        });
+    });
+</script>
 </html>
